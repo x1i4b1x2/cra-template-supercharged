@@ -1,0 +1,13 @@
+{
+  "extends": ["@primer/stylelint-config", "stylelint-config-standard", "stylelint-config-recommended", "stylelint-config-prettier"],
+  "plugins": ["stylelint-declaration-block-no-ignored-properties"],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "primer/borders": false,
+    "primer/box-shadow": false,
+    "primer/colors": false,
+    "primer/responsive-widths": false,
+    "primer/spacing": false,
+    "primer/typography": false
+  }
+}

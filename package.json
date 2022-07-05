@@ -1,0 +1,45 @@
+{
+  "name": "cra-template-supercharged",
+  "title": "Supercharged CRA Typescript Template with Popular Packages, Redux RTK, Opinionated Linters, and Incorporated Prettier",
+  "version": "1.0.0",
+  "description": "Supercharged CRA Typescript template with popular packages (Lodash, Axios, UUID, Date-fns), Redux RTK, types, and strongly opinionated Linters based on Airbnb Style Guide.",
+  "main": "template.json",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x1i4b1x2/cra-template-supercharged",
+    "directory": "/"
+  },
+  "homepage": "https://github.com/x1i4b1x2/cra-template-supercharged",
+  "bugs": {
+    "url": "https://github.com/x1i4b1x2/cra-template-supercharged/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "typescript",
+    "default",
+    "basic",
+    "redux",
+    "rtk",
+    "airbnb",
+    "style guide",
+    "types",
+    "lodash",
+    "template",
+    "reactjs",
+    "folder structure",
+    "generate templates",
+    "react-router-dom",
+    "eslint",
+    "prettier"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

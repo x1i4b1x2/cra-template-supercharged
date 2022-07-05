@@ -1,0 +1,25 @@
+.body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  text-align: center;
+}
+
+.app-header {
+  display: flex;
+  min-height: 40vh;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255 255 255);
+  flex-direction: column;
+  background-color: #282c34;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-link {
+  color: #61dafb;
+}
