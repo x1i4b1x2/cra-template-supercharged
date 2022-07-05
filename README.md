@@ -82,13 +82,13 @@ IDE's Types for:
 ## Usage
 
 ```bash
-npx create-react-app your-project-name --template supercharged
+npx create-react-app my-app --template supercharged
 ```
 
 Or;
 
 ```bash
-yarn create react-app your-project-name --template supercharged
+yarn create react-app my-app --template supercharged
 ```
 
 Cloning this repo pulls down the template only; not a bundled and configured Create React App.
