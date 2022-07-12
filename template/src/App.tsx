@@ -1,19 +1,20 @@
 import React from 'react';
-import './App.css';
-import Todo from './features/Todo';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+import './theme/values';
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
 
 const App = () => (
-  <div className="app">
-    <header className="app-header">
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a className="app-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        Learn React
-      </a>
-    </header>
-    <Todo />
-  </div>
+  <Provider store={store}>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  </Provider>
 );
 
 export default App;

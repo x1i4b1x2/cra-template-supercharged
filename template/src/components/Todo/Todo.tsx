@@ -1,5 +1,20 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
+import { css } from '@emotion/react/macro';
+import CircularProgress from '@mui/material/CircularProgress';
 import { useGetAllTodosQuery } from './todoSlice';
+
+const wrapperCSS = css({
+  padding: '2rem 0 0',
+  margin: '0 auto',
+  textAlign: 'center',
+});
+
+const Wrapper = ({ children, className }: { children: any; className?: string }) => (
+  <div css={wrapperCSS} className={className}>
+    {children}
+  </div>
+);
 
 const Todo = () => {
   const { data, isSuccess, isLoading, isError, error } = useGetAllTodosQuery();
@@ -7,7 +22,11 @@ const Todo = () => {
   let renderedContent;
 
   if (isLoading) {
-    renderedContent = <h1>Loading...</h1>;
+    renderedContent = (
+      <Wrapper>
+        <CircularProgress />
+      </Wrapper>
+    );
   }
 
   if (isError) {
@@ -28,7 +47,7 @@ const Todo = () => {
     );
   }
 
-  return <div className="todos">{renderedContent}</div>;
+  return <Wrapper>{renderedContent}</Wrapper>;
 };
 
 export default Todo;
