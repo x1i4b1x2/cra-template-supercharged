@@ -1,0 +1,4 @@
+body[data-theme='normal'] {
+  --colors-primary: rgb(51 122 255);
+  --colors-secondary: rgb(158 211 255);
+}
