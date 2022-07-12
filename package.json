@@ -1,8 +1,8 @@
 {
   "name": "cra-template-supercharged",
-  "title": "Supercharged CRA Typescript Template with Popular Packages, Redux RTK, Opinionated Linters, and Incorporated Prettier",
-  "version": "1.0.1",
-  "description": "Supercharged CRA Typescript template with popular packages (Lodash, Axios, UUID, Date-fns), Redux RTK, types, and strongly opinionated Linters based on Airbnb Style Guide.",
+  "title": "Supercharged CRA Typescript Template with Popular Packages, Redux RTK, Opinionated Linters, Emotion, Material UI, and Full REST API Server",
+  "version": "2.0.0",
+  "description": "Supercharged CRA Typescript template with popular packages (Lodash, Axios, UUID, Date-fns, etc), Redux RTK, types, and strongly opinionated Linters based on Airbnb Style Guide.",
   "main": "template.json",
   "license": "MIT",
   "repository": {
@@ -27,6 +27,8 @@
     "redux",
     "rtk",
     "airbnb",
+    "material ui",
+    "emotion",
     "style guide",
     "types",
     "lodash",
