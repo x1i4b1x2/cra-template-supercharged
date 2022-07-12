@@ -31,7 +31,7 @@
     "plugin:you-dont-need-lodash-underscore/compatible",
     "prettier"
   ],
-  "plugins": ["unicorn", "react", "lodash", "eslint-comments"],
+  "plugins": ["unicorn", "react", "lodash", "eslint-comments", "@emotion"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json",
@@ -52,6 +52,22 @@
     }
   },
   "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "@emotion/react",
+            "message": "Please import from @emotion/react/macro."
+          },
+          {
+            "name": "@emotion/styled",
+            "message": "Please import from @emotion/styled/macro."
+          }
+        ],
+        "patterns": ["!@emotion/react/macro", "!@emotion/styled/macro"]
+      }
+    ],
     "unicorn/filename-case": [
       "error",
       {
@@ -77,6 +93,7 @@
       }
     ],
     "react/prop-types": 0,
+    "react/require-default-props": 0,
     "lodash/prefer-constant": 0,
     "lodash/prefer-get": 0,
     "lodash/prefer-includes": 0,
@@ -90,6 +107,11 @@
     "lodash/prefer-some": 0,
     "lodash/prefer-startswith": 0,
     "lodash/prefer-times": 0,
-    "eslint-comments/disable-enable-pair": ["error", { "allowWholeFile": true }]
+    "eslint-comments/disable-enable-pair": ["error", { "allowWholeFile": true }],
+    "@emotion/pkg-renaming": "error",
+    "@emotion/no-vanilla": "error",
+    "@emotion/import-from-emotion": "error",
+    "@emotion/styled-import": "error",
+    "@emotion/syntax-preference": [2, "object"]
   }
 }
