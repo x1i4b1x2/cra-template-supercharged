@@ -67,9 +67,9 @@
     "scripts": {
       "analyze": "source-map-explorer 'build/static/js/*.js'",
       "coverage": "npm test -- --coverage",
-      "lint": "npx eslint 'src/**/*.{jsx,tsx}'",
+      "lint": "npx eslint 'src/**/*.{js,ts,jsx,tsx}'",
       "lint:fix": "npm run lint -- --fix",
-      "stylelint": "npx stylelint 'src/**/*.{jsx,tsx,css}'",
+      "stylelint": "npx stylelint 'src/**/*.{css,jsx,tsx}'",
       "stylelint:fix": "npm run stylelint -- --fix",
       "server:js": "json-server --watch server/db.js --port 3050 --delay 1000",
       "server:json": "json-server --watch server/db.json --port 3050 --delay 1000"

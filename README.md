@@ -1,14 +1,14 @@
 # Supercharged CRA Typescript Template
 
-## Supercharged CRA Typescript Template with Popular Packages, Redux RTK, Opinionated Linters, Incorporated Prettier, and Full REST API Server
+## Supercharged CRA Typescript Template with Popular Packages, Redux RTK, Opinionated Linters, Emotion, Material UI, and Full REST API Server
 
 Supercharged [Create React App](https://github.com/facebook/create-react-app) (CRA) Typescript template that includes:
 
 - Pre-configured mock full REST API server based on JSON Server (global installation needed).
 - Pre-configured Redux RTK Store, API Slices with Injections, Hooks and exported Types.
-- Custom JEST render wrapper with BrowserRouter and Redux.
+- Pre-configured type-safe CSS variables theme.
 
-Basic Popular Packages:
+Popular Packages:
 
 - Lodash
 - Axios
@@ -17,6 +17,9 @@ Basic Popular Packages:
 - Eslint
 - Classnames
 - Stylelint
+- Material UI
+- Emotion
+- Sanitize CSS
 - Prettier
 - UUID
 - React Router Dom
@@ -36,6 +39,7 @@ Opinionated Typescript/Javascript Linter based on:
 - You-Dont-Need-Lodash (prefers native JS when possible)
 - React Redux
 - Promises
+- Emotion
 - ESLint Comments
 - React w/ Hooks
 - Security
@@ -45,7 +49,7 @@ Opinionated Typescript/Javascript Linter based on:
 
 ---
 
-Opinionated CSS Linter based on:
+Opinionated CSS Linter (CSS-in-JS compatible) based on:
 
 - Recommended base config Stylelint
 - Standard config (Airbnb, Google, Idiomatic, @mdo), extended from Recommended
@@ -60,7 +64,7 @@ Simple Common Scripts:
 - coverage: "npm test -- --coverage",
 - lint: "npx eslint 'src/**/*.{js,ts,jsx,tsx}'",
 - lint:fix: "npm run lint -- --fix",
-- stylelint: "npx stylelint 'src/**/*.{css,less,scss,sass}'",
+- stylelint: "npx stylelint 'src/**/*.{css,jsx,tsx}'",
 - stylelint:fix: "npm run stylelint -- --fix",
 - server:js: "json-server --watch server/db.js --port 3050 --delay 1000",
 - server:json: "json-server --watch server/db.json --port 3050 --delay 1000"
