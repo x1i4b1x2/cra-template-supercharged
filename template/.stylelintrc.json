@@ -1,13 +1,22 @@
 {
   "extends": ["@primer/stylelint-config", "stylelint-config-standard", "stylelint-config-recommended", "stylelint-config-prettier"],
+  "overrides": [
+    {
+      "files": ["**/*.jsx", "**/*.tsx"],
+      "customSyntax": "@stylelint/postcss-css-in-js"
+    }
+  ],
   "plugins": ["stylelint-declaration-block-no-ignored-properties"],
   "rules": {
+    "function-no-unknown": [true, { "ignoreFunctions": ["/\\${/"] }],
     "plugin/declaration-block-no-ignored-properties": true,
     "primer/borders": false,
     "primer/box-shadow": false,
     "primer/colors": false,
     "primer/responsive-widths": false,
     "primer/spacing": false,
-    "primer/typography": false
+    "primer/typography": false,
+    "selector-max-type": null,
+    "selector-no-qualifying-type": [true, { "ignore": ["attribute"] }]
   }
 }
